@@ -1,20 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; //Permite Databinding, modificacion en vista a back
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ //Componentes y directivas
     AppComponent
   ],
-  imports: [
+  imports: [ //Modulos del framework
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], //Cargar servicios, middlewares, confirmadores
+  bootstrap: [AppComponent] //Punto incial de la app
 })
 export class AppModule { }
